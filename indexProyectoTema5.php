@@ -89,34 +89,15 @@
                         <td class="iconos"><a href="codigoPHP/ejercicio02.php"><i class="fa-solid fa-circle-play"></i></a>  </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraEjercicio02.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                     </tr>
-                    <tr>
+<!--                    <tr>
                         <th>3</th>
                         <td class="texto">Desarrollo de una aplicación (Proyecto LoginLogoffTema5) con control de acceso e identificación
                             del usuario basado en un formulario (Login.php).</td>
-                        <td class="iconos"><a href="codigoPHP/ejercicio03.php"><!--<i class="fa-solid fa-circle-play"></i>--></a>  </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraEjercicio03.php"><!--<i class="fa-solid fa-eye"></i>--></a>  </td>
+                        <td class="iconos"><a href="codigoPHP/ejercicio03.php"><i class="fa-solid fa-circle-play"></i></a>  </td>
+                        <td class="iconos"> <a href="mostrarcodigo/muestraEjercicio03.php"><i class="fa-solid fa-eye"></i></a>  </td>
 
-                    </tr>
-                    <tr>
-                        <th>4</th>
-                        <td class="texto">Implantación uso y disfrute de Xdebug en nuestro entorno de desarrollo. <span class="span">(Instalado en Ubuntu
-                                Server junto a Apache y lo usamos desde Windows integrándolo en NetBeans)</span>.</td>
-                        <td class="iconos"><a href="codigoPHP/ejercicio04.php"><!--<i class="fa-solid fa-circle-play"></i>--></a>  </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraEjercicio04.php"><!--<i class="fa-solid fa-eye"></i>--> </a>  </td>
-                    </tr>
-                    <tr>
-                        <th>5</th>
-                        <td class="texto">Incorporar el control de acceso, identificación de usuario, cookies y sesiones a nuestro
-                            Mantenimiento de Departamentos.</td>
-                        <td class="iconos"><a href="codigoPHP/ejercicio05.php"><!--<i class="fa-solid fa-circle-play"></i>--></a>  </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraEjercicio05.php"><!--<i class="fa-solid fa-eye"></i>--> </a>  </td>
-                    </tr>
-                    <tr>
-                        <th>6</th>
-                        <td class="texto">Ampliar la funcionalidad de la aplicación: MtoDepartamentos y MtoUsuarios.</td>
-                        <td class="iconos"><a href="codigoPHP/ejercicio06.php"><!--<i class="fa-solid fa-circle-play"></i>--></a>  </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraEjercicio06.php"><!--<i class="fa-solid fa-eye"></i>--></a>  </td>
-                    </tr>
+                    </tr>-->
+                   
                 </table>
             </section>
         </main>

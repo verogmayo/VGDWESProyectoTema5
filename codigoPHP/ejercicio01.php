@@ -26,14 +26,15 @@
                  * @var array<string, string> $aUsuarios Array asociativo con los usuarios válidos, sus contraseñas nombres completos.
                  * La clave es el nombre de usuario y el valor es la contraseña y el nombre.
                  */
+                
                 $aUsuarios = [
-                    "vero" => ["paso", "Véro Grué"],
-                    "miadmin" => ["paso", "Juan López"],
-                    "operadorweb" => ["paso", "Lucía Martin"]
+                    "vero" => [password_hash('paso', "sha256"), "Véro Grué"],
+                    "admin" => [password_hash('paso', "sha256"), "Juan López"],
+                    "operadorweb" => [password_hash('paso', "sha256"), "Lucía Martin"]
                 ];
-
+                $pass = password_hash('paso',"sha256");
                 //si no se han enviado las credenciales hay que pedir autenticación
-                if (!isset($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) {
+                if (!isset($_SERVER['PHP_AUTH_USER'],$_SERVER['PHP_AUTH_PW'] )) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";

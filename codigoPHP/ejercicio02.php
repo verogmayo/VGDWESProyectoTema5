@@ -23,12 +23,14 @@
                  * en la función header() y en el uso de una tabla “Usuario” de la base de datos. (PDO).
                  */
                 //si no se han enviado las credenciales hay que pedir autenticación
-                if (!isset($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) {
+                
+                
+               $pass = password_hash($_SERVER['PHP_AUTH_PW'], 256);
+               if(!isset($_SERVER['PHP_AUTH_USER'], $pass)) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";
-
-                    exit;
+                    exit; //el programa acaba aqui
                 }
                 //si se han enviado las credenciales,se comprueban las credenciales, con la base de datos
                 //enlace a los datos de conexión
@@ -44,11 +46,10 @@
 
                     $usuarioBD = $resultado->fetch();
                     // Si no exite, se vuelve a pedir las credenciales.
-                    if (!$usuarioBD || $usuarioBD['T01_Password'] !== $_SERVER['PHP_AUTH_PW']) {
+                    if (!$usuarioBD || $usuarioBD['T01_Password'] !== $pass) {
                         header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                         header('HTTP/1.0 401 Unauthorized');
                         echo "Credenciales incorrectas!";
-
                         exit;
                     }
                 } catch (Exception $ex) {
