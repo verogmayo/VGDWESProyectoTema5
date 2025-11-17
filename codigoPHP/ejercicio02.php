@@ -24,9 +24,10 @@
                  */
                 //si no se han enviado las credenciales hay que pedir autenticación
                 
-                
-               $pass = password_hash($_SERVER['PHP_AUTH_PW'], 256);
-               if(!isset($_SERVER['PHP_AUTH_USER'], $pass)) {
+                $usuario=$_SERVER['PHP_AUTH_USER'];
+                $passwd = $_SERVER['PHP_AUTH_PW'];
+               
+               if(!isset($usuario, $passwd)) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";
@@ -42,11 +43,11 @@
                       WHERE T01_CodUsuario= :usuario";
 
                     $resultado = $miDB->prepare($sql);
-                    $resultado->execute([':usuario' => $_SERVER['PHP_AUTH_USER']]);
+                    $resultado->execute([':usuario' => $usuario]);
 
                     $usuarioBD = $resultado->fetch();
                     // Si no exite, se vuelve a pedir las credenciales.
-                    if (!$usuarioBD || $usuarioBD['T01_Password'] !== $pass) {
+                    if (!$usuarioBD || $usuarioBD['T01_Password'] !== hash('sha256', $passwd)) {
                         header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                         header('HTTP/1.0 401 Unauthorized');
                         echo "Credenciales incorrectas!";
@@ -58,8 +59,8 @@
                 }
                 ?>
             </section>
-            <h2>Bienvenido/a, <?php echo $usuarioBD['T01_DescUsuario']; ?> </h2>
-            <p>Has iniciado sesión correctamente.</p>
+            <h2>Bienvenido/a, <?php echo $usuarioBD['T01_DescUsuario'];?> </h2>
+            <h2>Has iniciado sesión correctamente.</h2>
 
 
         </main>

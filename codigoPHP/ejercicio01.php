@@ -28,13 +28,13 @@
                  */
                 
                 $aUsuarios = [
-                    "vero" => [password_hash('paso', "sha256"), "Véro Grué"],
-                    "admin" => [password_hash('paso', "sha256"), "Juan López"],
-                    "operadorweb" => [password_hash('paso', "sha256"), "Lucía Martin"]
+                    "vero" => [hash('sha256', 'paso'), "Véro Grué"],
+                    "heraclio" => [hash('sha256', 'paso'), "Héraclio Borbujo"]
                 ];
-                $pass = password_hash('paso',"sha256");
+                $usuario=$_SERVER['PHP_AUTH_USER'];
+                $passwd = $_SERVER['PHP_AUTH_PW'];
                 //si no se han enviado las credenciales hay que pedir autenticación
-                if (!isset($_SERVER['PHP_AUTH_USER'],$_SERVER['PHP_AUTH_PW'] )) {
+                if (!isset($usuario,$passwd )) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";
@@ -42,7 +42,7 @@
                     exit;
                 }
                 //se comprueban las credenciales
-                if (!array_key_exists($_SERVER['PHP_AUTH_USER'], $aUsuarios) || $aUsuarios[$_SERVER['PHP_AUTH_USER']][0] !== $_SERVER['PHP_AUTH_PW']) {
+                if (!array_key_exists($usuario, $aUsuarios) || $aUsuarios[$usuario][0] !== hash('sha256', $passwd)) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Credenciales incorrectas!";
@@ -51,8 +51,8 @@
                 }
                 ?>
             </section>
-            <h2>Bienvenido/a, <?php echo $aUsuarios[$_SERVER['PHP_AUTH_USER']][1] ?> </h2>
-            <p>Has iniciado sesión correctamente.</p>
+            <h2>Bienvenido/a, <?php echo $aUsuarios[$usuario][1] ?> </h2>
+            <h2>Has iniciado sesión correctamente.</h2>
 
         </main>
 

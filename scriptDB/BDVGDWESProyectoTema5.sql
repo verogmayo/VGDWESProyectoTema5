@@ -1,3 +1,26 @@
+CREATE DATABASE IF  NOT EXISTS DBVGDWESProyectoTema5 ;
+USE DBVGDWESProyectoTema5;
+CREATE TABLE IF NOT EXISTS T_01Usuario (
+                     T01_CodUsuario VARCHAR(15) PRIMARY KEY,
+                     T01_Password VARCHAR(256) NOT NULL,
+                     T01_DescUsuario VARCHAR(255),
+                     T01_FechaHoraUltimaConexion DATETIME,
+                     T01_NumConexiones INT NOT NULL DEFAULT 1,
+                     T01_Perfil VARCHAR(25) default 'usuario',
+                     T01_ImagenUsuario MEDIUMBLOB default null)engine=innodb;
+                    
+
+
+CREATE TABLE IF NOT EXISTS T_02Departamento (
+                     T02_CodDepartamento VARCHAR(3) PRIMARY KEY, 
+                     T02_DescDepartamento VARCHAR(255),
+                     T02_FechaCreacionDepartamento datetime not null default now() ,
+                     T02_VolumenDeNegocio FLOAT,
+                     T02_FechaBajaDepartamento datetime default null)engine=innodb;
+                     
+                     
+
+
 USE DBVGDWESProyectoTema5;
 
 INSERT INTO T_01Usuario (T01_CodUsuario,T01_Password,T01_DescUsuario,T01_ImagenUsuario)
@@ -16,19 +39,10 @@ INSERT INTO T_01Usuario (T01_CodUsuario,T01_Password,T01_DescUsuario,T01_ImagenU
             ('jesus',SHA2('jesuspaso',256),'Enrique Nieto',null),
             ('amor',SHA2('amorpaso',256),'Amor Rodriguez',null),
             ('albertoB',SHA2('albertoBpaso',256),'Alberto Bahillo',null),
-            ('antonio',SHA2('antoniopaso',256),'Antonio Jañez',null),
-            ('jorge',SHA2('jorgepaso',256),'Jorge Corral',null),
-            ('claudio',SHA2('claudiopaso',256),'Claudio Lozano',null),
-            ('gisela',SHA2('giselapaso',256),'Gisela Folgueral',null)
+            ('antonio',SHA2('antoniopaso',256),'Antonio Jañez',null)
 ;
             
 
-/*INSERT INTO T_01Usuario (T01_CodUsuario,T01_Password,T01_NumConexiones,T01_FechaHoraUltimaConexion,T01_Perfil,T01_ImagenUsuario)
-solo se inserta en los campos (T01_CodUsuario,T01_Password,T01_Perfil,T01_ImagenUsuario)
-        T01_NumConexiones -  MySQL pone 0 (DEFAULT)
-        T01_FechaHoraUltimaConexion -  queda NULL (usuario nunca se conectó)
-        T01_ImagenUsuario - NULL hasta que subas una
-*/
 
 INSERT INTO T_02Departamento (T02_CodDepartamento,T02_DescDepartamento,T02_FechaCreacionDepartamento,T02_VolumenDeNegocio,T02_FechaBajaDepartamento)
                  VALUES 
