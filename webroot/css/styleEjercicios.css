@@ -1,0 +1,92 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+:root{
+    --bgColor:#f7f7f7;
+    --headerColor:#C0C0C0;
+    --secondColor:#eaeaea;
+    --textColor:#3f3844;
+    --mainColor:#e354f3;
+    --secondaryColor:#17b6f9;
+    --otherColor:#5d6c83;
+    --colorTabla:#8cb6f5;
+}
+html{
+    height: 100%;
+    margin: 0;
+}
+.header{
+    background-color: var(--headerColor);
+    margin: 0;
+    padding: 1rem;
+    color: blue;
+    display: flex;
+}
+
+h1{
+    width: 80%;
+    text-align: center;
+}
+h2{
+    text-align:  center;
+    padding: 1rem;
+}
+header a{
+    font-size:20px;
+    font-weight: 700;
+    height: 30px;
+    background: #C0C0C0;
+    text-decoration: none;
+    color: blue;
+}
+header a:hover{
+    text-decoration: none;
+}
+
+
+
+body{
+    background-color: var(--secondColor);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width: 80%;
+    flex: 1;
+}
+section{
+    margin-top: 40px;
+}
+
+
+
+a {
+    text-decoration: none;
+    padding: 0 auto;
+
+}
+
+.footer{
+    background-color: var(--secondColor);
+    padding:0 ;
+    margin: 0;
+    text-align: center;
+    bottom: 0;
+    font-size: 18px;
+    background-color: var(--headerColor);
+}
+footer a{
+    font-size: 18px;
+    color: blue;
+    background-color: var(--headerColor)
+}
+address{
+    font-size: 15px;
+}
+
