@@ -107,9 +107,14 @@
         </main>
         <footer class="footer">
             <div class="footerContent">
+                                    <div class="social-media">
+                        <a href="https://github.com/verogmayo/VGDWESProyectoTema5"><i class='bx bxl-github' ></i></a>
+                    </div>
                 <div><p class="copyright">
                         2025-26 IES LOS SAUCES. &#169;Todos los derechos reservados.</p> <address><a href="../index.html">Véronique Grué.</a> Fecha de Actualización :
                         <time datetime="2025-11-14"></time> 14-11-2025 </address>
+
+                    
                 </div>
 
             </div>
