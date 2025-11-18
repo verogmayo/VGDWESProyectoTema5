@@ -23,15 +23,20 @@
                 <h3>CONTENIDO DE LOS FICHEROS EXTERNOS</h3>
                 <table>
                     <tr>
+                        <th>Descripción</th>
+                        <th>Desarrollo</th>
+                        <th>Explotación</th>
+                        
                         <th>Descriptción</th>
-                        <th>Mostrar</th>
-                        <th>Descriptción</th>
-                        <th>Mostrar</th>
+                        <th>Desarrollo</th>
+                        <th>Explotación</th>
                     </tr>
                     <tr>
                         <td class="texto">Creación de la base de Datos y del usuario. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraCreaDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+                        <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                         <td class="texto">Librería personal. </td>
+                        <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                     </tr>
 
@@ -39,17 +44,16 @@
 
                         <td class="texto">Carga de la base de Datos. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraCargaDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+                         <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                         <td class="texto">Fichero de configuración PDO. </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraconfDBPDO.php"><i class="fa-solid fa-eye"></i> </a></td>
+                        <td class="iconos"> <a href="mostrarcodigo/muestraconfDBPDODes.php"><i class="fa-solid fa-eye"></i> </a></td>
+                         <td class="iconos"> <a href="mostrarcodigo/muestraconfDBPDO.php"><i class="fa-solid fa-eye"></i> </a></td>
                     </tr>
                     <tr>
-
                         <td class="texto">Borrado de la base de Datos. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraBorraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                         <td class="texto"> </td>
                         <td class="iconos"> <a href=""><!--<i class="fa-solid fa-eye"></i>--> </a>  </td>
-
-
                     </tr>
 
 
