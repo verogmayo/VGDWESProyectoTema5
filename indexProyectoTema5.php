@@ -34,7 +34,7 @@
                     <tr>
                         <td class="texto">Creación de la base de Datos y del usuario. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraCreaDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+                        <td class="iconos" rowspan="2" > <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                         <td class="texto">Librería personal. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
@@ -44,7 +44,7 @@
 
                         <td class="texto">Carga de la base de Datos. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraCargaDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
-                         <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+<!--                         <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
                         <td class="texto">Fichero de configuración PDO. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraconfDBPDODes.php"><i class="fa-solid fa-eye"></i> </a></td>
                          <td class="iconos"> <a href="mostrarcodigo/muestraconfDBPDO.php"><i class="fa-solid fa-eye"></i> </a></td>
