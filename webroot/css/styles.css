@@ -117,6 +117,7 @@ footer{
     bottom: 0;
     font-size: 18px;
     background-color: var(--headerColor);
+    display: flex;
 }
 footer a{
   font-size: 18px;
@@ -124,4 +125,22 @@ footer a{
 }
 address{
     font-size: 15px;
+}
+.bxl-github{
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    color: var(--textColor);
+    background-color: var(--colorTabla);  
+}
+.footerContent{
+    display: flex;
+    justify-content: space-around;
+}
+.social-media{
+    margin-right: 20px;
+}
+.copyright{
+    margin-right: 20px;
 }

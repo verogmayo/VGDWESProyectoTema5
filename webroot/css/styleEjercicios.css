@@ -80,6 +80,7 @@ a {
     bottom: 0;
     font-size: 18px;
     background-color: var(--headerColor);
+    display: inline-flex;
 }
 footer a{
     font-size: 18px;
@@ -89,4 +90,16 @@ footer a{
 address{
     font-size: 15px;
 }
+.bxl-github{
+    font-size: 2.5rem;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    color: var(--textColor);
+    background-color: var(--mainColor);  
+}
+.social-media{
+    width: 30px;
+}
+
 
