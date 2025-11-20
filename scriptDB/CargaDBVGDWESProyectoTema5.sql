@@ -1,3 +1,6 @@
+/*
+Este cogido sql se ejecutará en el ide del entorno de desarrollo para cargar las tablas
+En Netbeans se elije el conexion en la parte superior de la ventana del codigo y se hace clic en el icono de la base de datos amarilla y un flcha verde  */
 USE DBVGDWESProyectoTema5;
 
 INSERT INTO T_01Usuario (T01_CodUsuario,T01_Password,T01_DescUsuario,T01_ImagenUsuario)
