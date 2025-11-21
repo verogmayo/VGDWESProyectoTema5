@@ -34,10 +34,11 @@
                     <tr>
                         <td class="texto">Creación de la base de Datos y del usuario. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraCreaDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
-                        <td class="iconos" rowspan="2" > <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
-                        <td class="texto">Librería personal. </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
-                        <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+                        <td class="iconos" rowspan="2" > <a href="https://github.com/verogmayo/VGDAWProyectoDAW/blob/master/EntornoDeExplotacion.md">Instalación </a> <br>
+                            <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+                        <td class="texto">Librería Validación . </td>
+                        <td class="iconos" colspan="2"> <a href="mostrarcodigo/muestraLibreriaValidacion.php"><i class="fa-solid fa-eye"></i> </a>  </td>
+<!--                        <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
                     </tr>
 
                     <tr>
@@ -52,8 +53,9 @@
                     <tr>
                         <td class="texto">Borrado de la base de Datos. </td>
                         <td class="iconos"> <a href="mostrarcodigo/muestraBorraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>
-                        <td class="texto"> </td>
-                        <td class="iconos"> <a href=""><!--<i class="fa-solid fa-eye"></i>--> </a>  </td>
+                        <td class="iconos"> <a href=""><i class="fa-solid fa-eye"></i> </a>  </td>
+                        <td class="texto">Librería personal. </td>
+                        <td class="iconos" colspan="2"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>
                     </tr>
 
 
@@ -111,7 +113,7 @@
                         <a href="https://github.com/verogmayo/VGDWESProyectoTema5"><i class='bx bxl-github' ></i></a>
                     </div>
                 <div><p class="copyright">
-                        2025-26 IES LOS SAUCES. &#169;Todos los derechos reservados.</p> <address><a href="../index.html">Véronique Grué.</a> Fecha de Actualización :
+                        2025-26 IES LOS SAUCES. &#169;Todos los derechos reservados.</p> <address><a href="../index.html" >Véronique Grué.</a> Fecha de Actualización :
                         <time datetime="2025-11-14"></time> 14-11-2025 </address>
 
                     
