@@ -6,9 +6,7 @@
         <title>Véro Grué - ProyectoTema5 Ejercicio00</title>
         <link rel="stylesheet" href="../webroot/css/styleEjercicios.css">
         <style>
-            *{
-                margin: 0 auto;
-            }
+            
             h2{
                 text-align: center;
                 width: 100%;
@@ -24,7 +22,7 @@
             }
             table {
                 border-collapse: collapse;
-                width: 80%;
+                width: 100%;
                 border: 2px solid black;
                 background-color: #f9f9f9;
                 font-family: Arial, sans-serif;
@@ -32,8 +30,6 @@
             th, td {
                 border: 1px solid black;
                 padding-left: 8px;
-
-
             }
             th {
                 background-color: #9999cc;
@@ -48,6 +44,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 margin-right:50px;
+/*                white-space: nowrap;*/
             }
             td:nth-child(odd) {
                 /*seleciona los elemenos impares*/
