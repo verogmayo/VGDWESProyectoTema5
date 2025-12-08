@@ -34,7 +34,7 @@
                 }
                 //si se han enviado las credenciales,se comprueban las credenciales, con la base de datos
                 //enlace a los datos de conexión
-                require_once '../config/confDBPDO.php';
+                require_once '../config/confDBPDODes.php';
                 try {
                     $miDB = new PDO(DNS, USUARIODB, PSWD);
                     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
